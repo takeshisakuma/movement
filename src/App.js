@@ -6,7 +6,7 @@ import Style from "./App.css";
 
 function App() {
   return (
-    <Router className={Style}>
+    <Router className={Style} basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Top} />
         <Route exact path="/watch" component={Watch} />

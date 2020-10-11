@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #f5f6fa;
+  z-index: 2;
+  padding: 16px 20px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.1));
+
+  h1 {
+    line-height: 1rem;
+    a {
+      color: #273c75;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: opacity ease-in-out 0.2s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

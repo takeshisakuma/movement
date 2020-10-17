@@ -40,8 +40,9 @@ const Top = () => {
               />
             );
           })}
+
+        {globalState.limit && <Limit />}
       </VideoGroup>
-      {globalState.limit && <Limit />}
     </Layout>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Limit from "../Limit/Limit";
 
 import { Store } from "../../store/index";
 
@@ -15,7 +16,7 @@ const VideoDetail = () => {
       <p className={Style.title}>{globalState.selected.snippet.title}</p>
     </div>
   ) : (
-    <span>no data</span>
+    <Limit />
   );
 };
 

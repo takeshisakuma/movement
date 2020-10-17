@@ -3,6 +3,7 @@ import React, { createContext, useReducer } from "react";
 const initialState = {
   selected: {},
   playlist: [],
+  limit: "",
 };
 
 const reducer = (state, action) => {
@@ -12,6 +13,9 @@ const reducer = (state, action) => {
 
     case "SET_SELECTED":
       return { ...state, selected: action.payload.selected };
+
+    case "SET_LIMIT":
+      return { ...state, limit: action.payload.limit };
 
     default:
       return state;

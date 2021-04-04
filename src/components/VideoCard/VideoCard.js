@@ -12,7 +12,7 @@ const VideoCard = ({ src, title, position, videoid, playlistid }) => {
       className={Style.item}
     >
       <div>
-        <img src={src} alt={title} />
+        <img className={Style.thumbnail} src={src} alt={title} />
         <p className={Style.title}>{title}</p>
       </div>
     </Link>
